@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!empty($_SESSION['id'])){
+
 	
 ?>
 <!DOCTYPE html>
@@ -72,91 +72,70 @@ if(!empty($_SESSION['id'])){
 
                     <li><a href="Termos/politica.php"> Termos </a></li>
                     <li><a href="#"> DOENÇAS </a></li>
-                    <li><a href="sobreapp.php"> SOBRE </a></li>
+
                     <li><a href="index.php"> INICIO </a></li>
                     <li><a onclick="href='sair.php'"><i class="fas fa-sign-out-alt"></i>Sair</a></li>
                 </ul>
             </div>
             <div class="news">
-                <?php
-                echo "<h2 class='h5 underline highlight' style='text-align: center;'>".$_SESSION['nome']."</h2>";
-                ?>
+
+                <h2 class='h5 underline highlight' style='text-align: center;'>Hippotec 2021 &copy;</h2>
+
                 <br>
                 <div class="news">
 
-                    <div class="personal1"><?php
-                  
+                    <div class="personal1">
+
+
+
+                        <img src='../img/icon_v2_preview.png' width='50%' height='50%' alt='User_Empty'>
                         
-                    
-                        if(!empty($_SESSION['id'])){
-                            echo "<br><img src='../img/User/img_user".$_SESSION['id'].".png' class='img_personal1' width='50%' height='50%' alt='img_user".$_SESSION['id'].".png'>";
-                        }else{
-                            echo "<br><img src='../img/User/img_user0.png' width='50%' height='50%' alt='User_Empty'>";
-                        }
-                   
-                    ?>
+
+
+
                     </div>
-                    <ul>
-
-
+                    
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <?php
-                        echo "<li><p><b>ID <i class='fas fa-key'></i>: </b>".$_SESSION['id']."</p></li>";
-                        ?>
+                                    <h1><i class="fas fa-h-square" style="color: Teal;"></i> Hippotec versão 1.2</h1>
                                 </div>
-
+                            </div>
+                            
+                            <div class="row">
                                 <div class="col">
-                                    <?php
-                        echo "<li><p><b>DTNasc <i class='fas fa-calendar-alt'></i>: </b>".$_SESSION['dtnasc']."</p></li>";
-                        ?>
-                                </div>
-                                <div class="col">
-                                    <?php
-                        if($_SESSION['tipousr'] == 1){
-                            echo "<li><p><b>Tipo <i class='fas fa-user-shield'></i>: </b>".$_SESSION['tipousr']." - Usuario Administador</p></li>";
-                           
-                        }else{
-                            echo "<li><p><b>Tipo <i class='fas fa-user-cog'></i>: </b>".$_SESSION['tipousr']." - Usuario Comum</p></li>";
-                           
-                        }
-                        ?>
+                                <h1><i class="fas fa-h-square" style="color: Teal;"></i> Mudanças na versão</h1>
+                                <ol>
+                                    <li> > Correção nos links de alguns botões</li>
+                                    <li> > item 2</li>
+                                </ol>
                                 </div>
 
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <?php
-                        echo "<li><p><b>Nome <i class='fas fa-user'></i>: </b>".$_SESSION['nome']."</p></li>";
-                        ?>
+                                   <h1></h1>
                                 </div>
 
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <?php
-                        echo "<li><p><b>Email <i class='fas fa-envelope'></i>: </b>".$_SESSION['email']."</p></li>";
-                        ?>
+                                <h1></h1>
                                 </div>
 
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <?php
-                        echo "<li><p><b>Cpf <i class='fas fa-code'></i>: </b>".$_SESSION['cpf_usr']."</p></li>";
-?>
+                                    <h1><a href="https://linkei.com.br/dieguesmosken" target="_blank">@dieguesmosken</a></h1>
                                 </div>
                                 <div class="col">
-                                    <button type="button" class="btn btn-info"><a href="sair.php">Sair</button>
+                                    <button type="button" class="btn btn-info"><a href="index.php.php">Home</button>
                                 </div>
 
                             </div>
 
                         </div>
-
-
-                    </ul>
+                    
 
 
 
@@ -180,9 +159,3 @@ if(!empty($_SESSION['id'])){
 </body>
 
 </html>
-<?php
-}else{
-	$_SESSION['msg'] = "Usuario não logado - Faça seu login";
-	header("Location: login.php");	
-}
-?>

@@ -1,3 +1,8 @@
+<?php
+session_start();
+if(!empty($_SESSION['id'])){
+	
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -363,3 +368,9 @@ $(function () {
 </body>
 
 </html>
+<?php
+}else{
+	$_SESSION['msg'] = "Usuario não logado - Faça seu login";
+	header("Location: ../view/login.php");	
+}
+?>

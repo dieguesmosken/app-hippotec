@@ -10,9 +10,9 @@
    
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
     <link rel="shortcut icon" type="image/x-icon" href="img/8646icon_32x32.ico">
-    <link rel="stylesheet" type="text/css" href="css/ionic.css" />
+    <link rel="stylesheet" type="text/css" href="../css/ionic.css" />
     <title>Hippotec</title>
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
  <script type="text/javascript">
     $(document).ready(function() {
         $("#insert").click(function() {
@@ -48,7 +48,7 @@
 
 <body>
     <div class="bar bar-hearder bar-calm" style="margin-bottom: 80px;">
-        <a href="index.html" class="button button-clear">Home</a>
+        <a href="index.php" class="button button-clear">Home</a>
         <h1 class="title">Hippotec cadastro</h1>
         
         

@@ -38,10 +38,10 @@ if(!empty($_SESSION['id'])){
         ?>
         </div>
         <div class="item">
-            <a id="insert_d" class="button button-block button-positive"  href="cdst_doe.html">Cadastrar doença</a>
+            <a id="insert_d" class="button button-block button-positive"  href="cdst_doe.php">Cadastrar doença</a>
         </div>
         <div class="item">
-            <a id="insert_t" class="button button-block button-positive"  href="cdst_tel.html">Cadastrar Telefones</a>
+            <a id="insert_t" class="button button-block button-positive"  href="cdst_tel.php">Cadastrar Telefones</a>
         </div>
         <div class="item">
             <a id="insert_i" class="button button-block button-positive"  href="index.php">Voltar Ao Inicio</a>
