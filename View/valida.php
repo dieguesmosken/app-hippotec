@@ -11,6 +11,7 @@ if($btnLogin){
 	if((!empty($email)) AND (!empty($senha))){
 		//Gerar a senha criptografada
 		echo password_hash($senha, PASSWORD_DEFAULT);
+		$password_hash = password_hash($senha, PASSWORD_DEFAULT);
 		//Pesquisar o usuário no BD
 		$result_usuario = "SELECT * FROM hpt_usr WHERE email_usr='$email' LIMIT 1";
 		$resultado_usuario = mysqli_query($con, $result_usuario);
@@ -23,6 +24,7 @@ if($btnLogin){
 				$_SESSION['tipousr'] = $row_usuario['tipo_usr'];
 				$_SESSION['dtnasc'] = $row_usuario['dtnasc_usr'];
 				$_SESSION['cpf_usr'] = $row_usuario['cpf_usr'];
+				$_SESSION['password_hash'] = $password_hash;
 				header("Location: administrativo.php");
 			}else{
 				if($senha == $row_usuario['pass_usr']){

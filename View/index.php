@@ -15,8 +15,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/ionic.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/mobileui/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/index4botoes.css" />
 </head>
@@ -31,7 +30,7 @@ session_start();
             <ul class="menubar">
                 <li><a class="active" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"
                             style="color: Teal;"></i></a></li>
-                <li><a href="index.html"><i class="fas fa-h-square"></i></a></li>
+                <li><a href="index.php"><i class="fas fa-h-square"></i></a></li>
                 <button type="button" class="btn btn-info btn-sm"><a href="login.php">LOGIN</button>
 
             </ul>
@@ -110,7 +109,7 @@ session_start();
 
                         <div class="opcao2">
 
-                            <a href="contatos.html" class="link_opcoes">
+                            <a href="contatos.php" class="link_opcoes">
 
                                 <div class="zona_imagemop2">
                                     <img src="../img/contato.svg" class="imagem_opcao2">

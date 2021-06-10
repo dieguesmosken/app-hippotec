@@ -72,7 +72,7 @@ if(!empty($_SESSION['id'])){
 
                     <li><a href="Termos/politica.php"> Termos </a></li>
                     <li><a href="#"> DOENÇAS </a></li>
-                    <li><a href="sobreapp.php"> SOBRE </a></li>
+                    <li><a href="sobre.php"> SOBRE </a></li>
                     <li><a href="index.php"> INICIO </a></li>
                     <li><a onclick="href='sair.php'"><i class="fas fa-sign-out-alt"></i>Sair</a></li>
                 </ul>
