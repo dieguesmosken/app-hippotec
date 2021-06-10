@@ -89,7 +89,7 @@ session_start();
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <h1><i class="fas fa-h-square" style="color: Teal;"></i> Versão 1.2.1 BugFix</h1>
+                                    <h1><i class="fas fa-h-square" style="color: Teal;"></i> Versão 1.3</h1>
                                 </div>
                             </div>
                             
@@ -99,6 +99,7 @@ session_start();
                                 <ol>
                                     <li> > 1.2 Adição de perfil e correções de bugs</li>
                                     <li> > 1.2.1 Correção de script não funcional que ocasionava erros nos links de botões</li>
+                                    <li> > 1.3 Adicionado pagina Doenças</li>
                                 </ol>
                                 </div>
 
