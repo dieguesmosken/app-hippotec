@@ -18,9 +18,8 @@ session_start();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/mobileui/style.css" />
 
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <title>Profile</title>
+    
+    <title>Sobre APP</title>
 
 </head>
 
@@ -81,23 +80,16 @@ session_start();
                 <h2 class='h5 underline highlight' style='text-align: center;'>Hippotec 2021 &copy;</h2>
 
                 <br>
-                <div class="news">
-
                     <div class="personal1">
 
-
-
                         <img src='../img/icon_v2_preview.png' width='50%' height='50%' alt='User_Empty'>
-                        
-
-
 
                     </div>
                     
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <h1><i class="fas fa-h-square" style="color: Teal;"></i> Hippotec versão 1.2</h1>
+                                    <h1><i class="fas fa-h-square" style="color: Teal;"></i> Versão 1.2.1 BugFix</h1>
                                 </div>
                             </div>
                             
@@ -105,8 +97,8 @@ session_start();
                                 <div class="col">
                                 <h1><i class="fas fa-h-square" style="color: Teal;"></i> Mudanças na versão</h1>
                                 <ol>
-                                    <li> > Correção nos links de alguns botões</li>
-                                    <li> > item 2</li>
+                                    <li> > 1.2 Adição de perfil e correções de bugs</li>
+                                    <li> > 1.2.1 Correção de script não funcional que ocasionava erros nos links de botões</li>
                                 </ol>
                                 </div>
 
@@ -128,19 +120,12 @@ session_start();
                                     <h1><a href="https://linkei.com.br/dieguesmosken" target="_blank">@dieguesmosken</a></h1>
                                 </div>
                                 <div class="col">
-                                    <button type="button" class="btn btn-info"><a href="index.php.php">Home</button>
+                                    <button type="button" class="btn btn-info" onclick="href='index.php'"><a class="btn btn-info btn-sm" href="index.php">Home</a></button>
                                 </div>
 
                             </div>
 
                         </div>
-                    
-
-
-
-
-
-                </div>
             </div>
         </div>
     </div>

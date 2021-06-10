@@ -20,12 +20,7 @@ session_start();
 	
 	</head>
 		<body style="background-color: PaleTurquoise">
-	<?php
-			if(isset($_SESSION['msg'])){
-				echo $_SESSION['msg'];
-				unset($_SESSION['msg']);
-			}
-		?>
+	
 	<div class="container">
 		<div class="app">
 			
@@ -62,8 +57,17 @@ session_start();
 		
 		<div class="news">
 		<div class="list">
-			<input type="hidden" id="id" value=""/>
+			
 			<h2>Login Hippotec</h2>
+			<input type="text" disabled value=" <?php
+			if(isset($_SESSION['msg'])){
+				echo $_SESSION['msg'];
+				unset($_SESSION['msg']);
+				
+			}else{
+				echo "Sem Mensagens Do Sistema";
+			}
+		?>">
 			<form method="POST" action="valida.php">
 			<label>Usuário</label>
 			<input type="text" class="item" name="email" placeholder="Digite o seu email"><br><br>

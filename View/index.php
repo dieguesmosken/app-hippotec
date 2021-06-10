@@ -10,7 +10,7 @@ session_start();
 
 <head>
     <meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width">
-    <title>HIPPOTEC </title>
+    <title>APLICATIVO </title>
     <link rel="stylesheet" type="text/css" href="../css/fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -182,7 +182,7 @@ session_start();
 </html>
 <?php
 
-	$_SESSION['msg'] = "Usario Não identificado!";
+	$_SESSION['msg'] = "Seja Bem Vindo Ao Login";
 	
 
 ?>
