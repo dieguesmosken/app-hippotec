@@ -11,6 +11,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../css/fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/ionic.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="../css/mobileui/style.css" />
@@ -26,7 +27,7 @@ session_start();
                 <li><a class="active" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"
                             style="color: Teal;"></i></a></li>
                 <li><a href="index.php"><i class="fas fa-h-square"></i></li>
-                <button type="button" class="button btn-primary btn-sm"><a href="login.php">LOGIN</button>
+               
 
             </ul>
             <!-- Menu Lateral-->
@@ -82,7 +83,7 @@ session_start();
             <div class="news">
 
 
-                <div style="border: 1px solid" onclick="location.href='BRONQUITE.html'">
+                <div class="table item" style="border: 1px solid" onclick="location.href='BRONQUITE.html'">
                 <img class="left square avatar" width="50px" height="50px" src="img/letter/letterB.png">
                 <br><h2 class="text-strong">RONQUITE </h2>
                     <p class="opacity-60">existem 2 tipos de bronquites:
@@ -91,7 +92,7 @@ session_start();
                     </p>
                 </div>
 
-                <div style="border: 1px solid" onclick="location.href='BOTULISMO.html'">
+                <div class="table item" style="border: 1px solid" onclick="location.href='BOTULISMO.html'">
                 <img class="left square avatar" width="50px" height="50px" src="img/letter/letterB.png">
                 <br><h2 class="text-strong">OTULISMO</h2>
                     <p class="opacity-60">é uma doença bacteriana causada pela ingestão de alimentos contaminados, muito
@@ -99,7 +100,7 @@ session_start();
                         considerada uma das mais letais segundo a medicina. </p>
                 </div>
 
-                <div style="border: 1px solid">
+                <div class="table item"" style="border: 1px solid">
                 <img class="left square avatar" width="50px" height="50px" src="img/letter/letterB.png">
                 <br><h2 class="text-strong">ULIMIA</h2>
                     <p class="opacity-60">transtorno alimentar no qual uma pessoa oscila entre comer exageradamente,
@@ -115,7 +116,7 @@ session_start();
             </div>
         </div>
 
-        <li><a href="index.php"><i class="fas fa-sign-out-alt"></i>
+        <li><a href="doenca.php"><i class="fas fa-sign-out-alt"></i>
                 Voltar</a></li>
 
     </div>

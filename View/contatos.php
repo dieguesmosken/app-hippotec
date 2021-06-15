@@ -11,6 +11,7 @@ session_start();
 	    <link rel="stylesheet" type="text/css" href="../css/fontawesome/css/all.min.css">
 	    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	    <link rel="stylesheet" type="text/css" href="../css/ionic.css">
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 
 	    <link rel="stylesheet" type="text/css" href="../css/mobileui/style.css" />
@@ -26,7 +27,7 @@ session_start();
 	                <li><a class="active" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"
 	                            style="color: Teal;"></i></a></li>
 	                <li><a href="index.php"><i class="fas fa-h-square"></i></li>
-	                <button type="button" class="button btn-primary btn-sm"><a href="login.php">LOGIN</button>
+	               
 
 	            </ul>
 	            <!-- Menu Lateral-->

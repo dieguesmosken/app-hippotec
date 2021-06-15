@@ -371,6 +371,6 @@ $(function () {
 <?php
 }else{
 	$_SESSION['msg'] = "Usuario não logado - Faça seu login";
-	header("Location: ../view/login.php");	
+	header("Location: ../View/Login/login.php");	
 }
 ?>

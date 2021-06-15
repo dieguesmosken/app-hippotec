@@ -17,8 +17,12 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../css/ionic.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/mobileui/style.css" />
+    <style>
+    a {
+        text-decoration: none;
+    }
+    </style>
 
-    
     <title>Sobre APP</title>
 
 </head>
@@ -32,6 +36,7 @@ session_start();
             <ul class="menubar">
                 <li><a class="active" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"
                             style="color: Teal;"></i></a></li>
+            
                 <li><a href="index.php"><i class="fas fa-h-square"></i></li>
 
 
@@ -49,14 +54,22 @@ session_start();
 					}
 			   
                     ?>
-                    <h3 style="color:white;">Menu</h3>
+                    <h3 style="color:white;">SOBRE</h3>
                 </div>
                 <!-- Itens do Menu Lateral  -->
                 <div class="clearfix"></div>
                 <ul>
                     <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
                                 class="fas fa-times"></i></a></li>
-                    <li><a href="#"><?php echo $_SESSION['nome'];?></a></li>
+                    <?php
+                     if(!empty($_SESSION['id'])){
+						echo "<li><a href='#'>".$_SESSION['nome']."</a></li>";
+					}else{
+						echo "<li><a href='#'>Não logado</a></li>";
+					}
+			   
+                    ?>
+
 
                     <?php if (!empty($_SESSION['nome'])) {
                         if($_SESSION['tipousr'] == 1){
@@ -66,70 +79,66 @@ session_start();
 
                         }
                     }else{
-                       echo  "<li><a href='login.php'>Faça o login</a></li>";
+                       echo  "<li><a href='Login/login.php'>Faça o login</a></li>";
                     }?>
 
                     <li><a href="Termos/politica.php"> Termos </a></li>
-                    <li><a href="#"> DOENÇAS </a></li>
+                    <li><a href="doenca.php"> DOENÇAS </a></li>
                     <li><a href="index.php"> INICIO </a></li>
                     <li><a onclick="href='sair.php'"><i class="fas fa-sign-out-alt"></i>Sair</a></li>
                 </ul>
             </div>
             <div class="news">
 
-                <h2 class='h5 underline highlight' style='text-align: center;'>Hippotec 2021 &copy;</h2>
+                
 
                 <br>
-                    <div class="personal1">
+                <div class="personal1">
 
-                        <img src='../img/icon_v2_preview.png' width='50%' height='50%' alt='User_Empty'>
+                <div class="item" style="border: 1px solid">
+                                <img class="left circle avatar" width="50px" height="50px" src="../img/icon_v2_preview.png">
+                                <h1>Hippotec Versão 1.3.1</h1>
+                                <p> > Corrigida pagina de Cadastro</p>
+                            </div>
+
+                </div>                        
+                            <br>
+                            <p class="text-strong"> Desenvovedores: </p>
+                            <div class="item" style="border: 1px solid">
+                                <img class="left circle avatar" width="50px" height="50px" src="../img/User/img_user1.png">
+                                <h1>&nbsp; Matheus Mosken Diegues</h1>
+                                <p>&nbsp;Back-End</p>
+                            </div>
+                            <div class="item" style="border: 1px solid">
+                                <img class="left circle avatar" width="50px" height="50px" src="../img/User/img_user3.png">
+                                <h1>&nbsp; Bruno Taiki Sadano Chiga</h1>
+                                <p>&nbsp; Front-End, Back-End e Docs</p>
+                            </div>
+                              <div class="item" style="border: 1px solid">
+                                <img class="left circle avatar" width="50px" height="50px" src="../img/User/img_user5.png">
+                                <h1>&nbsp; George Antony dos Santos</h1>
+                                <p>&nbsp; Design</p>
+                            </div>
+                      
+
+                   
+                    
 
                     </div>
                     
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <h1><i class="fas fa-h-square" style="color: Teal;"></i> Versão 1.3</h1>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col">
-                                <h1><i class="fas fa-h-square" style="color: Teal;"></i> Mudanças na versão</h1>
-                                <ol>
-                                    <li> > 1.2 Adição de perfil e correções de bugs</li>
-                                    <li> > 1.2.1 Correção de script não funcional que ocasionava erros nos links de botões</li>
-                                    <li> > 1.3 Adicionado pagina Doenças</li>
-                                </ol>
-                                </div>
-
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                   <h1></h1>
-                                </div>
-
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                <h1></h1>
-                                </div>
-
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <h1><a href="https://linkei.com.br/dieguesmosken" target="_blank">@dieguesmosken</a></h1>
-                                </div>
-                                <div class="col">
-                                    <button type="button" class="btn btn-info" onclick="href='index.php'"><a class="btn btn-info btn-sm" href="index.php">Home</a></button>
-                                </div>
-
-                            </div>
-
+                    <div class="row">
+                        <div class="col">
+                        <h6 class='h5 underline highlight' style='text-align: center;'><a
+                        href="../../hpt_CRUD/index.php"> Hippotec 2021 &copy;</a></h6>
                         </div>
+    
+
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
+    
 
     <script src="../js/jquery.min.js"></script>
     <script>

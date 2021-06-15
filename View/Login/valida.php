@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once '../Conexao/conexao.php';
+require_once '../../Conexao/conexao.php';
 
 $btnLogin = filter_input(INPUT_POST, 'btnLogin', FILTER_SANITIZE_STRING);
 if($btnLogin){
@@ -10,8 +10,7 @@ if($btnLogin){
 	//echo "$email - $senha";
 	if((!empty($email)) AND (!empty($senha))){
 		//Gerar a senha criptografada
-		echo password_hash($senha, PASSWORD_DEFAULT);
-		$password_hash = password_hash($senha, PASSWORD_DEFAULT);
+		
 		//Pesquisar o usuário no BD
 		$result_usuario = "SELECT * FROM hpt_usr WHERE email_usr='$email' LIMIT 1";
 		$resultado_usuario = mysqli_query($con, $result_usuario);
@@ -24,8 +23,8 @@ if($btnLogin){
 				$_SESSION['tipousr'] = $row_usuario['tipo_usr'];
 				$_SESSION['dtnasc'] = $row_usuario['dtnasc_usr'];
 				$_SESSION['cpf_usr'] = $row_usuario['cpf_usr'];
-				$_SESSION['password_hash'] = $password_hash;
-				header("Location: administrativo.php");
+			
+				header("Location: ../administrativo.php");
 			}else{
 				if($senha == $row_usuario['pass_usr']){
 				$_SESSION['id'] = $row_usuario['id'];
@@ -34,7 +33,7 @@ if($btnLogin){
 				$_SESSION['tipousr'] = $row_usuario['tipo_usr'];
 				$_SESSION['dtnasc'] = $row_usuario['dtnasc_usr'];
 				$_SESSION['cpf_usr'] = $row_usuario['cpf_usr'];
-				header("Location: index.php");
+				header("Location: ../index.php");
 			}else{
 				$_SESSION['msg'] = "User não encontrado ou senha incorreta!";
 				header("Location: login.php");

@@ -11,7 +11,8 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../css/fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/ionic.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">-->
 
     <link rel="stylesheet" type="text/css" href="../css/mobileui/style.css" />
 
@@ -26,7 +27,7 @@ session_start();
                 <li><a class="active" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"
                             style="color: Teal;"></i></a></li>
                 <li><a href="index.php"><i class="fas fa-h-square"></i></li>
-                <button type="button" class="button btn-primary btn-sm"><a href="login.php">LOGIN</button>
+               
 
             </ul>
             <!-- Menu Lateral-->
@@ -35,9 +36,9 @@ session_start();
                 <div class="profile">
                     <?php
                      if(!empty($_SESSION['id'])){
-                        echo "<br><img src='../img/User/img_user".$_SESSION['id'].".png'  width='50%' height='50%' alt='img_user".$_SESSION['id'].".png'>";
+                        echo "<br><img src='../img/User/img_user".$_SESSION['id'].".png' class='img_personal1' width='50%' height='50%' alt='img_user".$_SESSION['id'].".png'>";
                     }else{
-                        echo "<br><img src='../img/User/img_user0.png' width='50%' height='50%' alt='User_Empty'>";
+                        echo "<br><img src='../img/User/img_user0.png' class='img_personal1' width='50%' height='50%' alt='User_Empty'>";
                     }
                
                     ?>
@@ -67,7 +68,7 @@ session_start();
 
                         }
                     }else{
-                       echo  "<li><a href='login.php'>Faça o login</a></li>";
+                       echo  "<li><a href='Login/login.php'>Faça o login</a></li>";
                     }?>
 
 
@@ -75,7 +76,7 @@ session_start();
                     <li><a href="#"> DOENÇAS </a></li>
                     <li><a href="sobre.php"> SOBRE </a></li>
                     <li><a href="Termos/politica.php"> Termos </a></li>
-                    <li><a href="index.php" onclick="href='sair.php'"><i class="fas fa-sign-out-alt"></i>
+                    <li><a href="index.php" onclick="href='Login/sair.php'"><i class="fas fa-sign-out-alt"></i>
                             Sair</a></li>
                 </ul>
             </div>

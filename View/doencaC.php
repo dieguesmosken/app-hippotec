@@ -11,6 +11,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../css/fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/ionic.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="../css/mobileui/style.css" />
@@ -31,7 +32,7 @@ session_start();
                 <li><a class="active" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"
                             style="color: Teal;"></i></a></li>
                 <li><a href="index.php"><i class="fas fa-h-square"></i></li>
-                <button type="button" class="button btn-primary btn-sm"><a href="login.php">LOGIN</button>
+               
 
             </ul>
             <!-- Menu Lateral-->
@@ -77,7 +78,7 @@ session_start();
 
 
                     <li><a href="profile.php"> PERFIL </a></li>
-                    <li><a href="#"> DOENÇAS </a></li>
+                    <li><a href="doenca.php"> DOENÇAS </a></li>
                     <li><a href="sobre.php"> SOBRE </a></li>
                     <li><a href="Termos/politica.php"> Termos </a></li>
                     <li><a href="index.php" onclick="href='sair.php'"><i class="fas fa-sign-out-alt"></i>
@@ -86,7 +87,7 @@ session_start();
             </div>
             <div class="news">
             <div class="list">
-				<div  style="border: 1px solid" onclick="location.href='CIRROSE.html'">
+				<div class="table item" style="border: 1px solid" onclick="location.href='CIRROSE.html'">
                 <img class="left square avatar" width="50px" height="50px" src="img/letter/letterC.png">
                 <br><h2 class="text-strong">CIRROSE</h2>
 					<p class="opacity-60">Quadros de cirrose são caracterizadas pela destruição de células do fígado são
@@ -95,7 +96,7 @@ session_start();
 					</p>
 				</div>
 				
-				<div  style="border: 1px solid"  onclick="location.href='covid.html'">
+				<div class="table item" style="border: 1px solid"  onclick="location.href='covid.html'">
                 <img class="left square avatar" width="50px" height="50px" src="img/letter/letterC.png">
                 <br><h2 class="text-strong">oronavirus</h2>
 					<p class="opacity-60">A COVID-19 afeta diferentes pessoas de diferentes maneiras. A maioria das pessoas infectadas apresentará sintomas leves a moderados da doença e não precisarão ser hospitalizadas.</p>
@@ -106,8 +107,8 @@ session_start();
                     <li>Cansaço</li>
 				</div>
                 </br>
-				<li><a href="tabdoenças.html" onclick="javascript:window.close()"><i class="fas fa-sign-out-alt"></i>
-						Voltar</a></li>
+				<li><a href="doenca.php"><i class="fas fa-sign-out-alt"></i>
+                Voltar</a></li>
 
             </div>
 			</div>

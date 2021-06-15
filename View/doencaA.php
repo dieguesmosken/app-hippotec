@@ -11,6 +11,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../css/fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/ionic.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="../css/mobileui/style.css" />
@@ -26,7 +27,7 @@ session_start();
                 <li><a class="active" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"
                             style="color: Teal;"></i></a></li>
                 <li><a href="index.php"><i class="fas fa-h-square"></i></li>
-                <button type="button" class="button btn-primary btn-sm"><a href="login.php">LOGIN</button>
+
 
             </ul>
             <!-- Menu Lateral-->
@@ -67,7 +68,7 @@ session_start();
 
                         }
                     }else{
-                       echo  "<li><a href='login.php'>Faça o login</a></li>";
+                       echo  "<li><a href='Login/login.php'>Faça o login</a></li>";
                     }?>
 
 
@@ -80,31 +81,47 @@ session_start();
                 </ul>
             </div>
             <div class="news">
-           
-                    <div style="border: 1px solid" onclick="location.href='acne.html'">
+
+                <div class="table item" style="border: 1px solid" onclick="location.href='acne.html'">
                     <img class="left square avatar" width="50px" height="50px" src="img/letter/letterA.png">
-                        <br><h2 class="text-strong">CNE</h2>
-                        <p class="opacity-60">A Acne nada mais é que uma lesão causada pelo aumento da produção de sebo
-                            vinda das glândulas sebáceas.
-                            Esse excesso de oleosidade deixa os poros obstruídos e aumenta a proliferação de bactérias,
-                            resultando nos comedões,
-                            que chamamos mais comumente de cravos. Quando ocorre a inflamação, chamamos de espinha.</p>
-                    </div>
-                   
-                    <div style="border: 1px solid">
-                        <img class="left square avatar" width="50px" height="50px" src="img/letter/letterA.png"><br>
-                        <p class="text-strong">LZHEIMER</p>
-                        <p class="opacity-60">O Alzheimer um grupo de distúrbios cerebrais que causam a perda de
-                            habilidades intelectuais e sociais.
-                            Na doença de Alzheimer,
-                            as células cerebrais degeneram e morrem, causando um declínio constante na memória e na
-                            função mental.</p>
-                    </div>
+                    <br>
+                    <h2 class="text-strong">IDS</h2>
+                    <p class="opacity-60">A AIDS é causada pelo vírus HIV, que interfere na capacidade do organismo de
+                        combater infecções.
+                        O vírus pode ser transmitido pelo contato com sangue, sêmen ou fluidos vaginais infectados.
+                        Algumas semanas depois da infecção pelo HIV, podem ocorrer sintomas semelhantes aos da gripe,
+                        como febre, dor de garganta e fadiga. A doença costuma ser assintomática até evoluir para AIDS.
+                        Os sintomas da AIDS incluem perda de peso, febre ou sudorese noturna, fadiga e infecções
+                        recorrentes.
+                        Não existe cura para a AIDS, mas uma adesão estrita aos regimes antirretrovirais (ARVs) pode
+                        retardar significativamente o progresso da doença, bem como prevenir infecções secundárias e
+                        complicações.</p>
                 </div>
-                <li><a href="index.php"><i class="fas fa-sign-out-alt"></i>
-                        Voltar</a></li>
+                <div class="table item" style="border: 1px solid" onclick="location.href='acne.html'">
+                    <img class="left square avatar" width="50px" height="50px" src="img/letter/letterA.png">
+                    <br>
+                    <h2 class="text-strong">CNE</h2>
+                    <p class="opacity-60">A Acne nada mais é que uma lesão causada pelo aumento da produção de sebo
+                        vinda das glândulas sebáceas.
+                        Esse excesso de oleosidade deixa os poros obstruídos e aumenta a proliferação de bactérias,
+                        resultando nos comedões,
+                        que chamamos mais comumente de cravos. Quando ocorre a inflamação, chamamos de espinha.</p>
+                </div>
+
+                <div class="table item" style="border: 1px solid">
+                    <img class="left square avatar" width="50px" height="50px" src="img/letter/letterA.png"><br>
+                    <h2 class="text-strong">LZHEIMER</h2>
+                    <p class="opacity-60">O Alzheimer um grupo de distúrbios cerebrais que causam a perda de
+                        habilidades intelectuais e sociais.
+                        Na doença de Alzheimer,
+                        as células cerebrais degeneram e morrem, causando um declínio constante na memória e na
+                        função mental.</p>
+                </div>
             </div>
+            <li><a href="doenca.php"><i class="fas fa-sign-out-alt"></i>
+                Voltar</a></li>
         </div>
+    </div>
 </body>
 <script src="../js/jquery.min.js"></script>
 <script>

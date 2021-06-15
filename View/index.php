@@ -1,9 +1,6 @@
 <?php
 
 session_start();
-
-
-	
 	?>
 <!DOCTYPE html>
 <html>
@@ -26,13 +23,19 @@ session_start();
 
         <div class="app">
 
-            <h2 class="h2 highlight" style="text-align: center;">HIPPOTEC</h2>
+            <h2 class="h4" style="text-align: center;">HIPPOTEC</h2>
             <ul class="menubar">
                 <li><a class="active" href="javascript:void(0)" onclick="openNav()"><i class="fas fa-bars"
                             style="color: Teal;"></i></a></li>
                 <li><a href="index.php"><i class="fas fa-h-square"></i></a></li>
-                <button type="button" class="btn btn-info btn-sm"><a href="login.php">LOGIN</button>
 
+                <?php if (!empty($_SESSION['nome'])) {
+                        
+                        echo  "<button type='button' class='btn btn-danger btn-sm'><a href='Login/sair.php'>SAIR</button>";
+                 
+                    }else{
+                       echo  "<button type='button' class='btn btn-success btn-sm btnSair'><a href='Login/login.php'>LOGIN</button>";
+                    }?>
             </ul>
             <!-- Menu Lateral-->
             <div class="sidenav" id="sidenav">
@@ -66,21 +69,23 @@ session_start();
 
                     <?php if (!empty($_SESSION['nome'])) {
                         if($_SESSION['tipousr'] == 1){
-                            echo "<li><a href='administrativo.php'>Painel Administrativo</a></li>";
+                            echo "<li><a href='administrativo.php'>PAINEL ADM</a></li>";
                         }
                         else{
 
                         }
                     }else{
-                       echo  "<li><a href='login.php'>Faça o login</a></li>";
+                       echo  "<li><a href='Login/login.php'>Faça o login</a></li>";
                     }?>
 
 
                     <li><a href="profile.php"> PERFIL </a></li>
                     <li><a href="doenca.php"> DOENÇAS </a></li>
+                    <li><a href="Cadastro/cadastro.php"> CADASTRO </a></li>
                     <li><a href="sobre.php"> SOBRE </a></li>
-                    <li><a href="Termos/politica.php"> Termos </a></li>
-                    <li><a href="index.php" onclick="href='sair.php'"><i class="fas fa-sign-out-alt"></i>
+                    <!--<li><a href="Termos/politica.php"> TERMOS</a></li>-->
+                    <li><a href="../../hpt_CRUD/index.php">NOSSO SITE</a></li>
+                    <li><a href="index.php" onclick="href='Login/sair.php'"><i class="fas fa-sign-out-alt"></i>
                             Sair</a></li>
                 </ul>
             </div>
@@ -100,6 +105,7 @@ session_start();
 
                                 <div class="zona_textoop1">
                                     <h3 class="titulotextoop1">PERFIL</h3>
+                                    <p class="subtitulotextoop1" >Detalhes do usuario</p>
 
                                 </div>
 
@@ -117,6 +123,7 @@ session_start();
 
                                 <div class="zona_textoop2">
                                     <h3 class="titulotextoop2">CONTATOS EMERGENCIA</h3>
+                                    <p class="subtitulotextoop1" >Telefones Uteis</p>
                                 </div>
 
                             </a>
@@ -133,6 +140,7 @@ session_start();
 
                                 <div class="zona_textoop3">
                                     <h3 class="titulotextoop3">PRÉ-DIAGNÓSTICO</h3>
+                                    <p class="subtitulotextoop1" >Questões sobre Sua Saúde</p>
 
                                 </div>
 
@@ -150,6 +158,7 @@ session_start();
 
                                 <div class="zona_textoop4">
                                     <h3 class="titulotextoop4"> COVID-19</h3>
+                                    <p class="subtitulotextoop1" >Site Ministerio da Saúde</p>
                                 </div>
                             </a>
                         </div>

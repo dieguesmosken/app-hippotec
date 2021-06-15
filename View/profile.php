@@ -65,7 +65,7 @@ if(!empty($_SESSION['id'])){
 
                         }
                     }else{
-                       echo  "<li><a href='login.php'>Faça o login</a></li>";
+                       echo  "<li><a href='Login/login.php'>Faça o login</a></li>";
                     }?>
 
                     <li><a href="Termos/politica.php"> Termos </a></li>
@@ -146,7 +146,7 @@ if(!empty($_SESSION['id'])){
 ?>
                                 </div>
                                 <div class="col">
-                                    <button type="button" class="btn btn-info"><a href="sair.php">Sair</button>
+                                    <button type="button" class="btn btn-info"><a href="Login/sair.php">Sair</button>
                                 </div>
 
                             </div>
@@ -181,6 +181,6 @@ if(!empty($_SESSION['id'])){
 <?php
 }else{
 	$_SESSION['msg'] = "Usuario não logado - Faça seu login";
-	header("Location: login.php");	
+	header("Location: Login/login.php");	
 }
 ?>
