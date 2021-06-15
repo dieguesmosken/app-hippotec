@@ -81,7 +81,7 @@ session_start();
                     <li><a href="doenca.php"> DOENÇAS </a></li>
                     <li><a href="sobre.php"> SOBRE </a></li>
                     <li><a href="Termos/politica.php"> Termos </a></li>
-                    <li><a href="index.php" onclick="href='sair.php'"><i class="fas fa-sign-out-alt"></i>
+                    <li><a href="index.php" onclick="href='Login/sair.php'"><i class="fas fa-sign-out-alt"></i>
                             Sair</a></li>
                 </ul>
             </div>
